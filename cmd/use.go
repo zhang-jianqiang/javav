@@ -30,7 +30,7 @@ var useCmd = &cobra.Command{
 		}
 
 		if !slices.Contains(versionItems, args[0]) {
-			fmt.Println("版本号输入错误, 支持的版本如下: " + strings.Join(args, "\r\n"))
+			fmt.Println("版本号输入错误, 支持的版本如下: \r\n" + strings.Join(versionItems, "\r\n"))
 			return
 		}
 
